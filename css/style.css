@@ -140,8 +140,9 @@
   }
 
   .navbar .navbar-nav {
-    background-color: #8b8b8bd2;
+    background-color: #242424;
     border-radius: 20px;
+    padding: 20px;
   }
 }
 
@@ -185,7 +186,7 @@
   height: 100%;
   background: linear-gradient(
     to bottom,
-    white,
+    rgba(0, 195, 255, 0.527),
     red
   ); /* White to Red gradient */
   opacity: 0.33; /* Adjust opacity for transparency */
