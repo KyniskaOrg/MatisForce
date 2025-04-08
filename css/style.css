@@ -313,7 +313,7 @@
 }
 
 .page-header {
-  background: linear-gradient(rgba(36, 36, 36, 0.62), rgba(255, 0, 0, 0.467)),
+  background: linear-gradient(rgba(36, 36, 36, 0.62), rgba(255, 0, 0, 0.267)),
     url(../img/abut.png) center center no-repeat;
   background-size: cover;
 }
