@@ -204,6 +204,15 @@
   background: var(--primary) !important;
 }
 
+.glow {
+  transition: text-shadow 0.4s ease-in-out; /* This adds a smooth transition for the text-shadow */
+}
+
+.glow:hover {
+  text-shadow: rgb(255, 255, 255) 1px 0 10px; /* Glow effect on hover */
+  animation-delay: 150ms;
+}
+
 /*** Header ***/
 .header-carousel .carousel-inner {
   position: absolute;
