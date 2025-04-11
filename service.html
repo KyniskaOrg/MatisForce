@@ -74,66 +74,75 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav py-4 py-lg-0">
-          <a href="index.html" class="nav-item nav-link">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link active">Service</a>
+          <a href="index.html" class="nav-item nav-link" id="nav-home">Home</a>
+          <a href="about.html" class="nav-item nav-link" id="nav-about"
+            >About</a
+          >
+          <a
+            href="service.html"
+            class="nav-item nav-link active"
+            id="nav-service"
+            >Service</a
+          >
           <a
             href="index.html"
             class="nav-item nav-link navbar-brand = align-items-center web-show"
           >
             <h2 class="m-0 glow" style="color: azure">MATISFORCE</h2>
           </a>
-          <a href="project.html" class="nav-item nav-link">Project</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Resources</a
-            >
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="index.html" class="dropdown-item">Feature</a>
-              <a href="index.html" class="dropdown-item">Free Quote</a>
-              <a href="index.html" class="dropdown-item">Our Team</a>
-              <a href="index.html" class="dropdown-item">Testimonial</a>
-            </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="project.html" class="nav-item nav-link" id="nav-project"
+            >Project</a
+          >
+          <a href="index.html" class="nav-item nav-link" id="nav-resources"
+            >Resources</a
+          >
+          <a href="contact.html" class="nav-item nav-link" id="nav-contact"
+            >Contact</a
+          >
+          <p
+            class="mobile-show"
+            style="cursor: pointer"
+            onclick="changeLanguage()"
+            id="langbuttonMB"
+          >
+            PT
+          </p>
         </div>
       </div>
+      <p
+        class="web-show"
+        style="cursor: pointer"
+        onclick="changeLanguage()"
+        id="langbutton"
+      >
+        PT
+      </p>
     </nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
       <div class="container py-5">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a class="text-white" href="#">Home</a>
-            </li>
-            <li class="breadcrumb-item">
-              <a class="text-white" href="#">Resources</a>
-            </li>
-            <li class="breadcrumb-item text-white active" aria-current="page">
-              Services
-            </li>
-          </ol>
-        </nav>
+        <h1
+          class="display-3 text-white mb-3 animated slideInDown"
+          id="services_title"
+        >
+          Services
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown"></nav>
       </div>
     </div>
     <!-- Page Header End -->
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="service">
       <div class="container">
         <div class="text-center">
           <div
             class="bg-primary mb-3 mx-auto"
             style="width: 60px; height: 2px"
           ></div>
-          <h1 class="display-5 mb-5">Our Services</h1>
+          <h1 class="display-5 mb-5" id="services-heading">Our Services</h1>
         </div>
         <div class="row g-4 service-row">
           <div
@@ -147,14 +156,12 @@
               >
                 <i class="fa fa-cogs fa-3x text-danger"></i>
               </div>
-              <h4 class="mb-3">Software Development</h4>
-              <p>
+              <h4 class="mb-3" id="service-1-title">Software Development</h4>
+              <p id="service-1-text">
                 We craft scalable, high-performance software tailored to your
-                unique business needs—from intuitive web/mobile apps to complex
-                enterprise systems, using cutting-edge technologies like AI,
-                cloud, and IoT.
+                unique business needs.
               </p>
-              <a class="btn mt-auto" href=""
+              <a class="btn mt-auto" href="service.html"
                 ><i class="fa fa-arrow-right text-white me-3"></i>Read More</a
               >
             </div>
@@ -170,14 +177,16 @@
               >
                 <i class="fa fa-headset fa-3x text-danger"></i>
               </div>
-              <h4 class="mb-3">Managed IT Services (MSP)</h4>
-              <p>
+              <h4 class="mb-3" id="service-2-title">
+                Managed IT Services (MSP)
+              </h4>
+              <p id="service-2-text">
                 Our proactive 24/7 IT management ensures your infrastructure
-                runs seamlessly—offering cloud solutions, cybersecurity, and
-                helpdesk support so you can focus on growth, not downtime.
+                runs seamlessly.
               </p>
-              <a class="btn mt-auto" href=""
-                ><i class="fa fa-arrow-right text-white me-3"></i>Read More</a
+              <a class="btn mt-auto" href="service.html"
+                ><i class="fa fa-arrow-right text-white me-3" id="readMore"></i
+                >Read More</a
               >
             </div>
           </div>
@@ -192,13 +201,11 @@
               >
                 <i class="fa fa-shield-alt fa-3x text-danger"></i>
               </div>
-              <h4 class="mb-3">Cyber & Cloud Security</h4>
-              <p>
-                Protect your business with enterprise-grade
-                security—comprehensive threat detection, compliance audits, and
-                cloud hardening to safeguard your data and reputation.
+              <h4 class="mb-3" id="service-3-title">Cyber & Cloud Security</h4>
+              <p id="service-3-text">
+                Protect your business with enterprise-grade security.
               </p>
-              <a class="btn mt-auto" href=""
+              <a class="btn mt-auto" href="service.html"
                 ><i class="fa fa-arrow-right text-white me-3"></i>Read More</a
               >
             </div>
@@ -214,14 +221,14 @@
               >
                 <i class="fa fa-cogs fa-3x text-danger"></i>
               </div>
-              <h4 class="mb-3">Turn-Key Solutions</h4>
-              <p>
+              <h4 class="mb-3" id="service-4-title">Turn-Key Solutions</h4>
+              <p id="service-4-text">
                 From concept to deployment, we deliver end-to-end technology
-                solutions—handling development, integration, and scaling so you
-                can launch faster and smarter.
+                solutions.
               </p>
-              <a class="btn mt-auto" href=""
-                ><i class="fa fa-arrow-right text-white me-3"></i>Read More</a
+              <a class="btn mt-auto" href="service.html"
+                ><i class="fa fa-arrow-right text-white me-3" id="readMore"></i
+                >Read More</a
               >
             </div>
           </div>
@@ -229,7 +236,6 @@
       </div>
     </div>
     <!-- Service End -->
-
     <!-- What We Do Start -->
     <div class="container-xxl py-5" id="what-we-do">
       <div class="container">
@@ -238,9 +244,9 @@
             class="bg-primary mb-3 mx-auto"
             style="width: 60px; height: 2px"
           ></div>
-          <h1 class="display-5 mb-5">What We Do</h1>
+          <h1 class="display-5 mb-5" id="what-we-do-heading">What We Do</h1>
         </div>
-        <p class="fs-5 mb-4">
+        <p class="fs-5 mb-4" id="what-we-do-text">
           At Matisforce, we empower entrepreneurs and enterprises to transform
           bold ideas into market-ready software solutions. Whether you need a
           Minimum Viable Product (MVP) to validate your concept, user-centric
@@ -249,19 +255,19 @@
           optimize high-performance digital products.
         </p>
         <ul class="list-unstyled fs-5">
-          <li>
+          <li id="what-we-do-item-1">
             <i class="fa fa-check text-danger me-2"></i>Accelerates
             time-to-market with agile development.
           </li>
-          <li>
+          <li id="what-we-do-item-2">
             <i class="fa fa-check text-danger me-2"></i>Enhances user engagement
             through intuitive design.
           </li>
-          <li>
+          <li id="what-we-do-item-3">
             <i class="fa fa-check text-danger me-2"></i>Scales securely with
             cloud-native and DevOps practices.
           </li>
-          <li>
+          <li id="what-we-do-item-4">
             <i class="fa fa-check text-danger me-2"></i>Solves complex
             challenges with AI, IoT, or blockchain integration.
           </li>
@@ -278,9 +284,9 @@
             class="bg-primary mb-3 mx-auto"
             style="width: 60px; height: 2px"
           ></div>
-          <h1 class="display-5 mb-5">Who We Are</h1>
+          <h1 class="display-5 mb-5" id="who-we-are-heading">Who We Are</h1>
         </div>
-        <p class="fs-5 mb-4">
+        <p class="fs-5 mb-4" id="who-we-are-text">
           Matisforce is a trusted technology partner dedicated to helping
           businesses innovate, secure, and scale through cutting-edge digital
           solutions. Founded on the principles of excellence, agility, and
@@ -290,8 +296,8 @@
         </p>
         <div class="row g-4">
           <div class="col-md-6">
-            <h3 class="text-primary">Our Mission</h3>
-            <p>
+            <h3 class="text-primary" id="our-mission-heading">Our Mission</h3>
+            <p id="our-mission-text">
               To empower organizations of all sizes with tailored,
               high-performance technology that drives growth, enhances
               efficiency, and mitigates risks in an ever-evolving digital
@@ -299,21 +305,21 @@
             </p>
           </div>
           <div class="col-md-6">
-            <h3 class="text-primary">Our Values</h3>
+            <h3 class="text-primary" id="our-values-heading">Our Values</h3>
             <ul class="list-unstyled">
-              <li>
+              <li id="our-values-item-1">
                 <i class="fa fa-check text-danger me-2"></i>Innovation: We stay
                 ahead of the curve with the latest tools and methodologies.
               </li>
-              <li>
+              <li id="our-values-item-2">
                 <i class="fa fa-check text-danger me-2"></i>Integrity:
                 Transparency and ethics are at the core of every partnership.
               </li>
-              <li>
+              <li id="our-values-item-3">
                 <i class="fa fa-check text-danger me-2"></i>Impact: We measure
                 success by the tangible results we deliver to your business.
               </li>
-              <li>
+              <li id="our-values-item-4">
                 <i class="fa fa-check text-danger me-2"></i>Collaboration: Your
                 vision + our expertise = unstoppable solutions.
               </li>
@@ -323,6 +329,7 @@
       </div>
     </div>
     <!-- Who We Are End -->
+
     <!-- Testimonial Start -->
     <div
       class="container-xxl py-5 wow fadeInUp"
@@ -335,7 +342,7 @@
             class="bg-primary mb-3 mx-auto"
             style="width: 60px; height: 2px"
           ></div>
-          <h1 class="display-5 mb-5">Testimonial</h1>
+          <h1 class="display-5 mb-5" id="testimonial-heading">Testimonial</h1>
         </div>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
@@ -345,30 +352,28 @@
             class="testimonial-item text-center"
             data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>"
           >
-            <p class="fs-5">
+            <p class="fs-5" id="testimonial-1-text">
               "Matisforce built our healthcare SaaS platform from
               scratch—delivering it 3 weeks ahead of schedule. Their agile
               approach and clean code reduced our maintenance costs by 40%.
               They’re not just vendors; they’re long-term partners."
             </p>
-            <h4>Sarah K.</h4>
-            <span class="text-primary"
-              >CTO @ MedTech Solutions (Healthcare Industry)</span
+            <h4 id="testimonial-1-author">Sarah K.</h4>
+            <span class="text-primary" id="testimonial-1-role"
+              >CTO @ MedTech Solutions</span
             >
           </div>
           <div
             class="testimonial-item text-center"
             data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>"
           >
-            <p class="fs-5">
+            <p class="fs-5" id="testimonial-2-text">
               "After struggling with constant IT fires, Matisforce took over our
-              infrastructure. Their 24/7 monitoring and proactive updates cut
-              our downtime to zero. Finally, we can focus on growth, not tech
-              headaches."
+              infrastructure."
             </p>
-            <h4>James L.</h4>
-            <span class="text-primary"
-              >COO @ RetailChain (E-commerce Industry)</span
+            <h4 id="testimonial-2-author">James L.</h4>
+            <span class="text-primary" id="testimonial-2-role"
+              >COO @ RetailChain</span
             >
           </div>
           <div
@@ -412,7 +417,7 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
+            <h5 class="text-light mb-4" id="Address">Address</h5>
             <p class="mb-2">
               <i class="fa fa-map-marker-alt me-3"></i>Rua da verdelho 333,
               4470-825 Maia
@@ -424,21 +429,12 @@
               <i class="fa fa-envelope me-3"></i>info@matisforce.com
             </p>
             <div class="d-flex pt-2">
-              <!-- <a
-            class="btn btn-square btn-outline-secondary rounded-circle me-2"
-            href=""
-            ><i class="fab fa-twitter"></i
-          ></a> -->
               <a
                 class="btn btn-square btn-outline-secondary rounded-circle me-2"
                 href="https://www.facebook.com/matisforce"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <!-- <a
-            class="btn btn-square btn-outline-secondary rounded-circle me-2"
-            href=""
-            ><i class="fab fa-youtube"></i
-          ></a> -->
+
               <a
                 class="btn btn-square btn-outline-secondary rounded-circle me-2"
                 href="https://pt.linkedin.com/company/matisforce"
@@ -446,27 +442,50 @@
               ></a>
             </div>
           </div>
-          <!-- <div class="col-lg-3 col-md-6">
-        <h5 class="text-light mb-4">Services</h5>
-        <a class="btn btn-link" href="">Business Security</a>
-        <a class="btn btn-link" href="">Fire Detection</a>
-        <a class="btn btn-link" href="">Alarm Systems</a>
-        <a class="btn btn-link" href="">CCTV & Video</a>
-        <a class="btn btn-link" href="">Smart Home</a>
-      </div> -->
+
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="#about">About Us</a>
-            <!-- <a class="btn btn-link" href="contact.html">Contact Us</a> -->
-            <a class="btn btn-link" href="#service">Our Services</a>
-            <a class="btn btn-link" href="#projects">Our Projects</a>
-            <a class="btn btn-link" href="#testimonial">Testimonials</a>
+            <h5 class="text-light mb-4" id="footer-quick-links-heading">
+              Quick Links
+            </h5>
+            <a class="btn btn-link" href="#about" id="footer-about-link"
+              >About Us</a
+            >
+
+            <a class="btn btn-link" href="#service" id="footer-services-link"
+              >Our Services</a
+            >
+            <a class="btn btn-link" href="#projects" id="footer-projects-link"
+              >Our Projects</a
+            >
+            <a
+              class="btn btn-link"
+              href="#testimonial"
+              id="footer-testimonials-link"
+              >Testimonials</a
+            >
+            <p
+              class="web-show"
+              style="cursor: pointer"
+              onclick="changeLanguage()"
+              id="langbuttonFT"
+            >
+              PT
+            </p>
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Contact Matisforce</h5>
-            <p>Let’s Build Something Extraordinary Together</p>
-            <a class="btn btn-light" href="contact.html">Contact Us</a>
+            <h5 class="text-light mb-4" id="footer-contact-heading">
+              Contact Matisforce
+            </h5>
+            <p id="footer-contact-text">
+              Let’s Build Something Extraordinary Together
+            </p>
+            <a
+              class="btn btn-light"
+              href="contact.html"
+              id="footer-contact-button"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
@@ -477,16 +496,26 @@
     <div class="container-fluid py-4" style="background: #000000">
       <div class="container" style="display: flex; flex-direction: row">
         <div class="row col-md-6">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            &copy; <a class="border-bottom" href="#">MatisForce</a>, All Right
-            Reserved.
+          <div
+            class="text-center text-md-start mb-3 mb-md-0"
+            style="display: flex; flex-direction: row"
+          >
+            &copy; <a href="#">MatisForce</a>
+            <p id="copyright-text">, All Right Reserved.</p>
           </div>
         </div>
-        <a href="cond.html" class="px-4">Condições de Uso</a>
-        <a href="codic.html" class="px-4"> Código de Conduta</a
-        ><a href="https://complain.matisforce.eu/" class="px-4">
-          Canal de Reclamações</a
-        >
+        <div class="row-md-6">
+          <a href="cond.html" class="px-4" id="terms-of-use">Terms of Use</a>
+          <a href="codic.html" class="px-4" id="code-of-conduct"
+            >Code of Conduct</a
+          >
+          <a
+            href="https://complain.matisforce.eu/"
+            class="px-4"
+            id="complaints-channel"
+            >Complaints Channel</a
+          >
+        </div>
       </div>
     </div>
     <!-- Copyright End -->
